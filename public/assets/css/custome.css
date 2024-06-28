@@ -1,0 +1,47 @@
+.bg-transparent{
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.btn-temp {
+    border-radius: 4px;
+    background-color: #142b4d;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn-temp span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-temp span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-temp:hover span {
+    padding-right: 25px;
+}
+
+.btn-temp:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.text-temp-header{
+    font-weight: bold;
+    font-size: 70px;
+    color: #142b4d;
+}
+.text-temp{
+    color: #142b4d;
+}
